@@ -10,4 +10,194 @@ html,
 body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  background-color: #000;
+  color: #fff;
+}
+
+.landing {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  transition: 0.35s;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.toggle {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle i {
+  font-size: 150%;
+  z-index: 2000;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.menu ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-bottom: 40px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 130%;
+  transition: 0.2s;
+}
+
+.menu ul li a:hover {
+  color: saddlebrown;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* opacity: 0.8; */
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg); /* Safari and Chrome */
+  -moz-transform: rotateY(180deg); /* Firefox */
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.text h3 {
+  font-size: 3em;
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+
+.text p {
+  line-height: 1.5rem;
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 300;
+  max-width: 600px;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 1.5px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 4px;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  z-index: 10;
+}
+
+.social li a {
+  display: flex;
+  color: #fff;
+  margin-bottom: 40px;
+  text-decoration: none;
+  font-size: 150%;
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: translateX(-25%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: darken;
+}
+
+/* MIDDLE SECTION */
+
+.middle {
+  height: 100vh;
+  width: 100vw;
+  background-color: #efefef;
+  color: #000;
+}
+
+.middle video {
+  height: 400px;
+  width: 400px;
+}
+
+.showcase.active {
+  right: 300px;
+}
+
+.hidden {
+  display: none;
 }
