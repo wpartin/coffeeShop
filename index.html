@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/queries.css" />
 
@@ -12,5 +17,82 @@
 
     <title>Coffee Cafe</title>
   </head>
-  <body></body>
+  <body>
+    <section class="landing">
+      <section class="showcase">
+        <header>
+          <h2 class="logo">Welcome</h2>
+          <div class="toggle" id="bars">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <div class="toggle hidden" id="close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+        </header>
+
+        <video
+          src="/img/grind.mp4"
+          type="video/mp4"
+          muted
+          loop
+          autoplay
+          id="grind"
+        ></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+          <h2>Good Coffee starts</h2>
+          <h3>with the right grind.</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+            minus laborum amet vel labore sapiente. Quam rem ex id assumenda
+            veniam. Facere esse deserunt placeat consequuntur molestiae harum et
+            illum.
+          </p>
+          <a href="#">Let's Grind.</a>
+        </div>
+
+        <ul class="social">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Brews</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="middle">
+      <div class="heading">
+        <h2>Lorem ipsum dolor</h2>
+      </div>
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          distinctio et quam sit molestias delectus atque impedit ex aliquam
+          cupiditate.
+        </p>
+      </div>
+      <div>
+        <video
+          src="/img/beans.mp4"
+          type="video/mp4"
+          muted
+          loop
+          autoplay
+          id="grind"
+        ></video>
+      </div>
+    </section>
+  </body>
 </html>
